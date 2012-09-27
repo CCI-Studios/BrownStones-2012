@@ -1,0 +1,43 @@
+@import "_variables";
+@import "_mixins";
+
+.image-border {
+	@include image-border;
+}
+
+.image-border-shadow {
+	@include image-border-shadow;
+}
+
+.beige {
+	color: $beige;
+}
+
+.module.sidebar {
+	.media-image {
+		position: absolute;
+		top: 0;
+		right: 30px;
+	}
+}
+
+.read-more {
+	position: absolute;
+	right: 22px;
+	bottom: 22px;
+	background: url('../images/button_read-more.png') top left no-repeat;
+	padding-left: 25px;
+
+	a {
+		color: $brown;
+	}
+
+	> *:first-child {
+		background: url('../images/button_read-more.png') bottom right no-repeat;
+		padding-right: 25px;
+		line-height: 33px;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+	}
+}
