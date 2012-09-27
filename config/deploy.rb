@@ -3,14 +3,14 @@ set :stages, %w(staging production)
 set :default_stage, "staging"
 require "capistrano/ext/multistage"
 
-set :application, "APPLICATION_NAME"
+set :application, "brownstonessarnia.com"
 
 # repository info
-set :repository,  "git@github.com:CCI-Studios/PROJECT.git"
+set :repository,  "git@github.com:CCI-Studios/BrownStones-2012.git"
 set :scm, :git
 
 # ssh settings
-set :user, "USERNAME"
+set :user, "browns"
 set :use_sudo, false
 
 # Joomla
