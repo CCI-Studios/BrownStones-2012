@@ -1,0 +1,53 @@
+/* elements */
+body, select, input, textarea {
+	color: #ffffff;
+	font-family: "myriad-pro", Helvetica, Arial, sans-serif;
+	font-size: .87em;
+}
+
+* { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+	// FIXME: Change this to the right path
+	*behavior: url(/templates/default/resources/boxsizing.htc); // IE7 only
+}
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 {
+	color: $beige;
+	font-weight: 300;
+	margin: 0;
+}
+
+.item-page h1 {
+	position: absolute;
+	left: 0;
+	top: -40px;
+}
+
+h2, h3, h4, h5, h6 {
+	padding: 5px 0;
+}
+
+h1 { font-size: 1.714285714; }
+h2 { font-size: 1.285714286em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+p {
+	margin-top: 0;
+}
+
+a, a:active, a:visited {
+	color: $link;
+	text-decoration: none;
+}
+a:hover {
+	color: $link;
+	text-decoration: underline;
+}
