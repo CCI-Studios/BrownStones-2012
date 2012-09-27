@@ -1,0 +1,97 @@
+// @group hmenu
+.hmenu {
+
+	.menu {
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu > li {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		position: relative;
+	
+		padding: 0 5px;
+	}
+
+	.menu > li > a,
+	.menu > li > span {
+		display: block;
+
+		span {
+
+		}
+	}
+
+	ul ul { // submenu
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin: 0;
+		padding: 0;
+
+		li {
+			white-space: nowrap;
+		}
+	}
+}
+
+.primary-menu {
+	font-size: 1.142857143em;
+
+	.menu > li {
+		padding: 0 10px;
+	}
+
+	a {
+		color: $beige;
+		line-height: 45px;
+		text-shadow: 1px 1px 3px black;
+		&:hover {
+			text-decoration: none;
+			background: url('../images/rollover_menu-inner.png') 78% top no-repeat;
+		}
+	}
+
+	.home & {
+
+	a {
+		color: $brown;
+		line-height: 41px;
+		text-shadow: none;
+		&:hover {
+			background: url('../images/rollover_menu.png') 78% top no-repeat;
+		}
+	}
+	}
+}
+
+.secondary-menu {
+	padding-bottom: 20px;
+	background: url('../images/divider_footer-menu.png') bottom center repeat-x;
+
+	.menu > li {
+		padding: 0 15px;
+		line-height: 1em;
+		border-left: 1px solid $brown;
+
+		&:first-child {
+			border-left: 0;
+		}
+	}
+}
+
+// @group vmenu
+.vmenu {
+
+	.menu {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul ul { // submenus
+		margin: 0.5em 0 1em 1em;
+		list-style: none;
+	}
+}
