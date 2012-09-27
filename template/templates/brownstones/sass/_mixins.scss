@@ -23,30 +23,21 @@
 	border: 3px solid $beige;
 }
 
-@mixin image-border-shadow {
-	position: relative;
+@mixin image-shadow {
+	display:block;
+    position:relative;
 
-	border: 3px solid $beige;
-
-	&::after {
-		position: absolute;
-		content: "";
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 2;
-
-		-webkit-box-shadow: inset 0 0 10px rgba(black, .7);
-		box-shadow: inset 0 0 10px rgba(black, .7);
+	&::before {
+	    content:'';
+	    position:absolute;
+	    width:100%;
+	    height:100%;
+	    -moz-box-shadow:inset 0 0 10px rgba(black, .7);
+	    -webkit-box-shadow:inset 0 0 10px rgba(black, .7);
+	    box-shadow:inset 0 0 10px rgba(black, .7);
 	}
-	
+
 	img {
-		position: relative;
-		z-index: 1;
 		display: block;
-		width: 100%;
-		height: 100%;
 	}
-
 }

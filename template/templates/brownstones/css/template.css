@@ -548,7 +548,7 @@ button {
   width: 100%;
   overflow: scroll; }
 .module.gallery .sigProContainer {
-  width: 1500px; }
+  width: 1550px; }
 .module.gallery ul.sigProClassic li.sigProThumb {
   margin: 0 0 0 10px;
   border: 6px solid black;
@@ -557,28 +557,24 @@ button {
     margin-left: 0; }
 .module.gallery ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
   padding: 0;
-  position: relative;
   border: 3px solid #e3dbcb; }
-  .module.gallery ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); }
-  .module.gallery ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: 100%; }
 .module.gallery ul.sigProClassic li.sigProThumb span.sigProLinkWrapper {
   margin: 0;
   padding: 0;
   border: 0; }
+.module.gallery a.sigProLink {
+  display: block;
+  position: relative; }
+  .module.gallery a.sigProLink::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); }
+  .module.gallery a.sigProLink img {
+    display: block; }
 
 .hmenu .menu {
   margin: 0;
@@ -665,48 +661,36 @@ button {
 .image-border {
   border: 3px solid #e3dbcb; }
 
-.image-border-shadow {
-  position: relative;
-  border: 3px solid #e3dbcb; }
-  .image-border-shadow::after {
+.image-shadow {
+  display: block;
+  position: relative; }
+  .image-shadow::before {
+    content: '';
     position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); }
-  .image-border-shadow img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: 100%; }
+  .image-shadow img {
+    display: block; }
 
 .image-border {
   border: 3px solid #e3dbcb; }
 
-.image-border-shadow {
-  position: relative;
-  border: 3px solid #e3dbcb; }
-  .image-border-shadow::after {
+.image-shadow {
+  display: block;
+  position: relative; }
+  .image-shadow::before {
+    content: '';
     position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
     -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7); }
-  .image-border-shadow img {
-    position: relative;
-    z-index: 1;
-    display: block;
-    width: 100%;
-    height: 100%; }
+  .image-shadow img {
+    display: block; }
 
 .beige {
   color: #e3dbcb; }
