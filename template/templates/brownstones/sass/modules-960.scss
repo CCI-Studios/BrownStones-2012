@@ -1,0 +1,13 @@
+.module.logo {
+	float: left;
+}
+
+.module.social-media {
+	width: auto;
+	float: right;
+	padding-top: 10px;
+
+	.home & {
+		padding-top: 69px;
+	}
+}

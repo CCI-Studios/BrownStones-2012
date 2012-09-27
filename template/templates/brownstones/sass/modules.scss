@@ -1,0 +1,79 @@
+// @group modules
+.module {} // DO NOT TOUCH
+
+.module.social-media {
+	width: 100%;
+	padding-top: 10px;
+}
+
+.module h3 {
+	font-size: 1.285714286em; //18px
+	padding-top: 0;
+}
+
+.module.sidebar {
+	width: 100%;
+	float: left;
+	position: relative;
+
+	.media-image {
+		position: absolute;
+		top: 0;
+		right: 30px;
+	}
+	div.custom {
+		background-color: $dark-brown;
+		@include border;
+
+		&:hover {
+			background: $dark-brown url('../images/rollover_sidebar.png') bottom right no-repeat;
+		}
+
+		> div {
+			padding-right: 44%;
+		}
+	}
+}
+
+.module.gallery {
+
+	> div {
+		background: url('../images/icon_gallery-prev.png') left center no-repeat;
+		padding-left: 40px;
+	
+		> div {
+			background: url('../images/icon_gallery-next.png') right center no-repeat;
+			padding-right: 40px;
+		}
+	}
+
+	div.custom {
+		width: 100%;
+		overflow: scroll;
+	}
+
+	.sigProContainer {
+		width: 1500px;
+	}
+
+	ul.sigProClassic li.sigProThumb {
+		margin: 0 0 0 10px;
+		border: 6px solid black;
+		border-radius: 4px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
+		padding: 0;
+		@include image-border-shadow;
+	}
+
+	ul.sigProClassic li.sigProThumb span.sigProLinkWrapper {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+}
