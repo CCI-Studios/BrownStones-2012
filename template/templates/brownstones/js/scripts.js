@@ -17,5 +17,7 @@ window.addEvent('domready', function() {
 
 window.addEvent('load', function () {
 	// columns
-	// new CCI.Columns($('bottom'), '.module > div > div');
+	if ($$(".ie7, .ie8").length == 0){
+		new CCI.Columns($('sidebar'), '.module div.custom > div');
+	}
 });
