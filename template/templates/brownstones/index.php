@@ -35,7 +35,7 @@ $typekit = "jvf6dch";
 
  	<jdoc:include type="head" />
 
-	<meta name="viewport" content="width=940px, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/templates/<?= $this->template ?>/resources/favicon.ico">
 	<link rel="apple-touch-icon" href="/templates/<?= $this->template ?>/resources/apple-touch-icon.png">
 
@@ -116,6 +116,7 @@ $typekit = "jvf6dch";
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/scripts.js"></script>
 	<?php else: ?>
 		<?php if ($analytics): ?>
 			<script>
