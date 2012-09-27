@@ -9,6 +9,11 @@
 	@include image-shadow;
 }
 
+.image-border-shadow {
+	@include image-border;
+	@include image-shadow;
+}
+
 .beige {
 	color: $beige;
 }
