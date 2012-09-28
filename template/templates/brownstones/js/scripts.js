@@ -18,6 +18,6 @@ window.addEvent('domready', function() {
 window.addEvent('load', function () {
 	// columns
 	if ($$(".ie7, .ie8").length == 0){
-		new CCI.Columns($('sidebar'), '.module div.custom > div');
+		new CCI.Columns($('sidebar-right'), '.module div.custom > div');
 	}
 });
