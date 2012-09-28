@@ -383,16 +383,23 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   margin: 0; }
 
-.item-page h1 {
+.item-page h1,
+.blog > h1,
+.restaurant-menu h3 {
+  font-size: 1.714285714em;
   position: absolute;
   left: 0;
   top: -40px; }
+
+.blog .item h1 {
+  font-size: 16px;
+  padding-bottom: 3px; }
 
 h2, h3, h4, h5, h6 {
   padding: 5px 0; }
 
 h1 {
-  font-size: 1.714285714; }
+  font-size: 1.714285714em; }
 
 h2 {
   font-size: 1.285714286em; }
@@ -478,10 +485,15 @@ button {
   padding: 65px 0 35px;
   background-color: #231309; }
 
+#sidebar-left {
+  float: left;
+  width: 23.404255319%; }
+
 #content {
   position: relative;
   background-color: #1c0e06;
   margin-bottom: 10px;
+  font-weight: lighter;
   padding: 7px;
   border: 1px solid #392212;
   border-radius: 3px; }
@@ -506,6 +518,14 @@ button {
   padding-top: 17px;
   line-height: 1.5em; }
 
+.blog .items-row {
+  margin-top: 1.5em; }
+  .blog .items-row.row-0 {
+    margin-top: 0; }
+.blog .item {
+  position: relative;
+  padding-right: 30%; }
+
 .module.social-media {
   width: 100%;
   padding-top: 10px; }
@@ -514,27 +534,27 @@ button {
   font-size: 1.285714286em;
   padding-top: 0; }
 
-.module.sidebar {
+.module.sidebar-right {
   width: 100%;
   float: left;
   margin-top: 20px;
   position: relative; }
-  .module.sidebar .media-image {
+  .module.sidebar-right .media-image {
     position: absolute;
     top: 0;
     right: 30px; }
-  .module.sidebar div.custom {
+  .module.sidebar-right div.custom {
     background-color: #1c0e06;
     padding: 7px;
     border: 1px solid #392212;
     border-radius: 3px; }
-    .module.sidebar div.custom > div {
+    .module.sidebar-right div.custom > div {
       padding: 15px 15px 0;
       border: 1px solid #392212;
       border-radius: 3px; }
-    .module.sidebar div.custom:hover {
+    .module.sidebar-right div.custom:hover {
       background: #1c0e06 url("../images/rollover_sidebar.png") bottom right no-repeat; }
-    .module.sidebar div.custom > div {
+    .module.sidebar-right div.custom > div {
       padding-right: 44%; }
 
 .module.gallery > div {
@@ -623,10 +643,15 @@ button {
 
 .vmenu .menu {
   margin: 0;
-  padding: 0; }
+  padding-left: 30px; }
+.vmenu li {
+  list-style: none; }
 .vmenu ul ul {
   margin: 0.5em 0 1em 1em;
   list-style: none; }
+
+.restaurant-menu {
+  display: none; }
 
 .clr, .clear {
   clear: both; }
@@ -645,12 +670,12 @@ button {
    Also: hot pink! */
 /* TODO Update selection BG color */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #e3dbcb;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #FF5E99;
+  background: #e3dbcb;
   color: #fff;
   text-shadow: none; }
 
@@ -727,6 +752,13 @@ button {
     *display: inline;
     *zoom: 1; }
 
+.menu-price {
+  color: #e3dbcb;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
   display: block; }
@@ -735,10 +767,10 @@ button {
 .phone-hidden, .mobile-hidden {
   display: none; }
 
-#sidebar {
+#sidebar-right {
   margin-left: -2.5%; }
 
-.module.sidebar {
+.module.sidebar-right {
   width: 50%;
   padding-left: 2.5%; }
 
@@ -768,23 +800,42 @@ button {
 #header {
   background-position: top center; }
 
+#sidebar-left + #content {
+  width: 76.595744681%; }
+
 #content {
   width: 63.829787234%;
   float: left; }
 
-#sidebar {
+#sidebar-right {
   width: 36.170212766%;
   margin-top: -47px;
   padding-left: 4.255319149%;
   float: left;
   margin-left: 0; }
 
-.module.sidebar {
+.module.sidebar-right {
   width: 100%;
   padding-left: 0; }
 
 .primary-menu .menu > li {
   padding: 0 20px; }
+
+.restaurant-menu {
+  display: block;
+  position: relative;
+  background: url("../images/icon_towers.png") top left no-repeat;
+  font-weight: lighter;
+  margin-top: 1px; }
+  .restaurant-menu h3 {
+    font-size: 1.714285714em; }
+  .restaurant-menu li {
+    line-height: 24px; }
+  .restaurant-menu a {
+    color: white; }
+    .restaurant-menu a:hover {
+      color: #e3dbcb;
+      text-decoration: none; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {
