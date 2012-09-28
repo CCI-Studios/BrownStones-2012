@@ -1,0 +1,32 @@
+.primary-menu {
+	font-size: 1.142857143em;
+
+	.menu > li {
+		padding: 0 10px;
+		width: auto;
+		background-color: inherit;
+		border: none;
+		box-shadow: none;
+		margin: 0;
+	}
+
+	a {
+		line-height: 45px;
+
+		&:hover {
+			background: url('../images/rollover_menu-inner.png') 78% top no-repeat;
+		}
+	}
+
+	.home & {
+
+		a {
+			color: $brown;
+			line-height: 41px;
+
+			&:hover {
+				background: url('../images/rollover_menu.png') 78% top no-repeat;
+			}
+		}
+	}
+}

@@ -42,28 +42,28 @@
 
 	.menu > li {
 		padding: 0 10px;
+		width: 49%;
+		background-color: $brown;
+		border: 1px solid $dark-brown;
+		box-shadow: inset 0px 0px 10px rgba(black, .7);
+		margin: .25%;
 	}
 
 	a {
 		color: $beige;
-		line-height: 45px;
+		line-height: 38px;
 		text-shadow: 1px 1px 3px black;
 		&:hover {
 			text-decoration: none;
-			background: url('../images/rollover_menu-inner.png') 78% top no-repeat;
 		}
 	}
 
 	.home & {
 
-	a {
-		color: $brown;
-		line-height: 41px;
-		text-shadow: none;
-		&:hover {
-			background: url('../images/rollover_menu.png') 78% top no-repeat;
+		a {
+			color: $beige;
+			text-shadow: none;
 		}
-	}
 	}
 }
 

@@ -466,7 +466,7 @@ button {
 
 #header {
   text-align: center;
-  background: #e3dbcb url("../images/bg_header-inner.jpg") top center no-repeat; }
+  background: #e3dbcb url("../images/bg_header-inner.jpg") top left no-repeat; }
   .home #header {
     background: #e3dbcb url("../images/bg_header-home.jpg") top center no-repeat; }
   #header > div {
@@ -601,20 +601,21 @@ button {
 .primary-menu {
   font-size: 1.142857143em; }
   .primary-menu .menu > li {
-    padding: 0 10px; }
+    padding: 0 10px;
+    width: 49%;
+    background-color: #3b2313;
+    border: 1px solid #1c0e06;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
+    margin: .25%; }
   .primary-menu a {
     color: #e3dbcb;
-    line-height: 45px;
+    line-height: 38px;
     text-shadow: 1px 1px 3px black; }
     .primary-menu a:hover {
-      text-decoration: none;
-      background: url("../images/rollover_menu-inner.png") 78% top no-repeat; }
+      text-decoration: none; }
   .home .primary-menu a {
-    color: #3b2313;
-    line-height: 41px;
+    color: #e3dbcb;
     text-shadow: none; }
-    .home .primary-menu a:hover {
-      background: url("../images/rollover_menu.png") 78% top no-repeat; }
 
 .secondary-menu {
   padding-bottom: 20px;
@@ -747,6 +748,25 @@ button {
   width: 50%;
   padding-left: 2.5%; }
 
+.primary-menu {
+  font-size: 1.142857143em; }
+  .primary-menu .menu > li {
+    padding: 0 10px;
+    width: auto;
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+    margin: 0; }
+  .primary-menu a {
+    line-height: 45px; }
+    .primary-menu a:hover {
+      background: url("../images/rollover_menu-inner.png") 78% top no-repeat; }
+  .home .primary-menu a {
+    color: #3b2313;
+    line-height: 41px; }
+    .home .primary-menu a:hover {
+      background: url("../images/rollover_menu.png") 78% top no-repeat; }
+
 .tablet-visible, .mobile-visible,
 .phone-hidden, .desktop-hidden {
   display: block; }
@@ -754,6 +774,9 @@ button {
 .phone-visible, .desktop-visible,
 .tablet-hidden, .mobile-hidden {
   display: none; }
+
+#header {
+  background-position: top center; }
 
 #content {
   width: 63.829787234%;
