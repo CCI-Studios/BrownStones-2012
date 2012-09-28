@@ -3,3 +3,28 @@
 		padding: 0 20px;
 	}
 }
+
+.restaurant-menu {
+	display: block; //remove
+	position: relative;
+	background: url('../images/icon_towers.png') top left no-repeat;
+	font-weight: lighter;
+	margin-top: 1px;
+
+	h3 {
+		font-size: 1.714285714em;
+	}
+
+	li {
+		line-height: 24px;
+	}
+
+	a {
+		color: white;
+
+		&:hover {
+			color: $beige;
+			text-decoration: none;
+		}
+	}
+}

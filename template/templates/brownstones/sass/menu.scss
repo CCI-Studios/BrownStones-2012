@@ -78,11 +78,19 @@
 
 	.menu {
 		margin: 0;
-		padding: 0;
+		padding-left: 30px;
+	}
+
+	li {
+		list-style: none;
 	}
 
 	ul ul { // submenus
 		margin: 0.5em 0 1em 1em;
 		list-style: none;
 	}
+}
+
+.restaurant-menu {
+	display: none;
 }
