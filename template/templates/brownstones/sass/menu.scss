@@ -52,17 +52,8 @@
 	a {
 		color: $beige;
 		line-height: 38px;
-		text-shadow: 1px 1px 3px black;
 		&:hover {
 			text-decoration: none;
-		}
-	}
-
-	.home & {
-
-		a {
-			color: $beige;
-			text-shadow: none;
 		}
 	}
 }

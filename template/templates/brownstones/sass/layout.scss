@@ -6,12 +6,8 @@
 
 #header {
 	text-align: center;
-	background: $beige url('../images/bg_header-inner.jpg') top left no-repeat;
-
-	.home & {
-		background: $beige url('../images/bg_header-home.jpg') top center no-repeat;
-	}
-
+	background: $beige url('../images/bg_header-home.jpg') top center no-repeat;
+	
 	> div {
 		background: url('../images/bg_cityscape.png') bottom center repeat-x;
 		

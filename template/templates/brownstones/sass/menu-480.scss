@@ -11,22 +11,11 @@
 	}
 
 	a {
-		line-height: 45px;
+		color: $brown;
+		line-height: 41px;
 
 		&:hover {
-			background: url('../images/rollover_menu-inner.png') 78% top no-repeat;
-		}
-	}
-
-	.home & {
-
-		a {
-			color: $brown;
-			line-height: 41px;
-
-			&:hover {
-				background: url('../images/rollover_menu.png') 78% top no-repeat;
-			}
+			background: url('../images/rollover_menu.png') 78% top no-repeat;
 		}
 	}
 }

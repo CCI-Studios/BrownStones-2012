@@ -466,9 +466,7 @@ button {
 
 #header {
   text-align: center;
-  background: #e3dbcb url("../images/bg_header-inner.jpg") top left no-repeat; }
-  .home #header {
-    background: #e3dbcb url("../images/bg_header-home.jpg") top center no-repeat; }
+  background: #e3dbcb url("../images/bg_header-home.jpg") top center no-repeat; }
   #header > div {
     background: url("../images/bg_cityscape.png") bottom center repeat-x; }
     #header > div > div {
@@ -609,13 +607,9 @@ button {
     margin: .25%; }
   .primary-menu a {
     color: #e3dbcb;
-    line-height: 38px;
-    text-shadow: 1px 1px 3px black; }
+    line-height: 38px; }
     .primary-menu a:hover {
       text-decoration: none; }
-  .home .primary-menu a {
-    color: #e3dbcb;
-    text-shadow: none; }
 
 .secondary-menu {
   padding-bottom: 20px;
@@ -758,13 +752,9 @@ button {
     box-shadow: none;
     margin: 0; }
   .primary-menu a {
-    line-height: 45px; }
-    .primary-menu a:hover {
-      background: url("../images/rollover_menu-inner.png") 78% top no-repeat; }
-  .home .primary-menu a {
     color: #3b2313;
     line-height: 41px; }
-    .home .primary-menu a:hover {
+    .primary-menu a:hover {
       background: url("../images/rollover_menu.png") 78% top no-repeat; }
 
 .tablet-visible, .mobile-visible,
