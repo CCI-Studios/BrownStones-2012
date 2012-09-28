@@ -26,7 +26,8 @@
 	<positions>
 		<position>debug</position>
 		<position>header</position>
-		<position>sidebar</position>
+		<position>sidebar-left</position>
+		<position>sidebar-right</position>
 		<position>bottom</position>
 		<position>footer</position>
 	</positions>
