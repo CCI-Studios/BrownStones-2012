@@ -73,13 +73,21 @@ $typekit = "jvf6dch";
 		</div></div></div></div>
 
 		<div id="main"><div class="container">
+			
+			<?php if ($this->countModules('sidebar-left')): ?>
+			<div id="sidebar-left">
+				<jdoc:include type="modules" name="sidebar-left" style="rounded" />
+				<div class="clear"></div>
+			</div>
+			<?php endif; ?>
+
 			<div id="content"><div>
 				<jdoc:include type="message" />
 				<jdoc:include type="component" />
 			</div></div>
 
-			<div id="sidebar">
-				<jdoc:include type="modules" name="sidebar" style="rounded" />
+			<div id="sidebar-right">
+				<jdoc:include type="modules" name="sidebar-right" style="rounded" />
 				<div class="clear"></div>
 			</div>
 
