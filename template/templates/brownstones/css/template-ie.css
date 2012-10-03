@@ -866,9 +866,8 @@ body {
     padding-top: 69px; }
 
 .primary-menu {
-  float: right; }
-  .home .primary-menu {
-    padding-top: 60px; }
+  float: right;
+  padding-top: 60px; }
 
 .desktop-visible, .phone-hidden,
 .tablet-hidden, .mobile-hidden {
