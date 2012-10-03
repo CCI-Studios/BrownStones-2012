@@ -485,6 +485,8 @@ body {
         background: url("../images/bg_header-top.png") top center repeat-x;
         padding: 20px 0;
         min-height: 384px; }
+        .ie8 #header > div > div > div {
+          min-height: 304px; }
 
 #main {
   padding: 65px 0 35px;
