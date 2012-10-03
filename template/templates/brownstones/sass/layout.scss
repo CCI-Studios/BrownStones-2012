@@ -4,6 +4,10 @@
 	margin: 0 auto;
 }
 
+body {
+	background: url('../images/bg_body-repeat.jpg') top center repeat;
+}
+
 #header {
 	text-align: center;
 	background: url('../images/bg_header-repeat.jpg') top center repeat-x;
