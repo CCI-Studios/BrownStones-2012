@@ -40,7 +40,6 @@ body {
 	position: relative;
 	background-color: $dark-brown;
 	margin-bottom: 10px;
-	font-weight: lighter;
 	@include border;
 
 	.home & .item-page {
