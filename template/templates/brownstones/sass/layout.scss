@@ -21,12 +21,7 @@ body {
 			> div {
 				background: url('../images/bg_header-top.png') top center repeat-x;
 				padding: 20px 0;
-				min-height: 384px;
-
-				.ie8 &,
-				.ie7 & {
-					min-height: 304px;
-				}
+				height: 384px;
 			}
 		}
 	}
