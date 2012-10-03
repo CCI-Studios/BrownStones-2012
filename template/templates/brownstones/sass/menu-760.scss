@@ -5,6 +5,12 @@
 }
 
 .restaurant-menu {
+	background: url('../images/icon_towers.png') top left no-repeat;
+
+	.menu {
+		padding-left: 30px;
+	}
+
 	li {
 		display: block;
 	}

@@ -491,7 +491,7 @@ body {
   background-color: #231309; }
 
 #sidebar-left {
-  padding-bottom: 40px; }
+  padding-bottom: 50px; }
 
 #content {
   position: relative;
@@ -654,17 +654,18 @@ body {
 .restaurant-menu {
   display: block;
   position: relative;
-  background: url("../images/icon_towers.png") top left no-repeat;
   font-weight: lighter;
   margin-top: 1px; }
   .restaurant-menu h3 {
     font-size: 1.714285714em; }
+  .restaurant-menu .menu {
+    padding-left: 0; }
   .restaurant-menu li {
     display: inline-block;
     *display: inline;
     *zoom: 1;
     line-height: 24px;
-    padding: 10px; }
+    padding: 10px 20px 0 0; }
   .restaurant-menu a {
     color: white; }
     .restaurant-menu a:hover {
@@ -840,8 +841,12 @@ body {
   .primary-menu .menu > li {
     padding: 0 20px; }
 
-  .restaurant-menu li {
-    display: block; }
+  .restaurant-menu {
+    background: url("../images/icon_towers.png") top left no-repeat; }
+    .restaurant-menu .menu {
+      padding-left: 30px; }
+    .restaurant-menu li {
+      display: block; }
 
   .tablet-visible, .mobile-visible,
   .desktop-visible, .phone-hidden {

@@ -94,7 +94,6 @@
 .restaurant-menu {
 	display: block; //remove
 	position: relative;
-	background: url('../images/icon_towers.png') top left no-repeat;
 	font-weight: lighter;
 	margin-top: 1px;
 
@@ -102,12 +101,16 @@
 		font-size: 1.714285714em;
 	}
 
+	.menu {
+		padding-left: 0;
+	}
+
 	li {
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
 		line-height: 24px;
-		padding: 10px;
+		padding: 10px 20px 0 0;
 	}
 
 	a {
