@@ -519,7 +519,6 @@ button {
     color: #1c0e06; }
 
 #copyright {
-  padding-top: 17px;
   line-height: 1.5em; }
 
 .blog .items-row {
@@ -806,6 +805,9 @@ button {
     padding-left: 4.255319149%;
     float: left;
     margin-left: 0; }
+
+  #copyright {
+    padding-top: 17px; }
 
   .module.sidebar-right {
     width: 100%;
