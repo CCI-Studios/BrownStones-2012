@@ -473,13 +473,15 @@ button {
 
 #header {
   text-align: center;
-  background: #e3dbcb url("../images/bg_header-home.jpg") top center no-repeat; }
+  background: url("../images/bg_header-repeat.jpg") top center repeat-x; }
   #header > div {
-    background: url("../images/bg_cityscape.png") bottom center repeat-x; }
+    background: url("../images/bg_header-home.jpg") top center no-repeat; }
     #header > div > div {
-      background: url("../images/bg_header-top.png") top center repeat-x;
-      padding: 20px 0;
-      min-height: 384px; }
+      background: url("../images/bg_cityscape.png") bottom center repeat-x; }
+      #header > div > div > div {
+        background: url("../images/bg_header-top.png") top center repeat-x;
+        padding: 20px 0;
+        min-height: 384px; }
 
 #main {
   padding: 65px 0 35px;
@@ -509,8 +511,10 @@ button {
   font-size: 12px;
   color: #1c0e06;
   text-align: center;
-  padding: 17px 0;
-  background-color: #e3dbcb; }
+  background: url("../images/bg_footer-repeat.jpg") top center repeat-x; }
+  #footer > div {
+    padding: 17px 0;
+    background: url("../images/bg_footer.jpg") top center no-repeat; }
   #footer a {
     color: #1c0e06; }
 
@@ -519,12 +523,7 @@ button {
   line-height: 1.5em; }
 
 .blog .items-row {
-  margin-top: 1.5em; }
-  .blog .items-row.row-0 {
-    margin-top: 0; }
-.blog .item {
-  position: relative;
-  padding-right: 30%; }
+  margin-bottom: 1.5em; }
 
 .module.social-media {
   width: 100%;
@@ -752,13 +751,6 @@ button {
     *display: inline;
     *zoom: 1; }
 
-.menu-price {
-  color: #e3dbcb;
-  font-size: 16px;
-  position: absolute;
-  top: 0;
-  right: 0; }
-
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
   display: block; }
@@ -854,7 +846,7 @@ button {
   #wrapper {
     min-width: 960px; }
 
-  #header > div > div {
+  #header > div > div > div {
     padding: 40px 0; }
 
   .module.logo {

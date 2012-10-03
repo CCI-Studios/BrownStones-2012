@@ -11,7 +11,9 @@
 #header {
 	> div {
 		> div {
-			padding: 40px 0;
+			> div {
+				padding: 40px 0;
+			}
 		}
 	}
 }

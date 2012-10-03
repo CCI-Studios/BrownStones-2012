@@ -67,10 +67,10 @@ $typekit = "jvf6dch";
 <body class="<?= $menu ?>">
 
 	<div id="wrapper">
-		<div id="header"><div><div><div class="container">
+		<div id="header"><div><div><div><div class="container">
 			<jdoc:include type="modules" name="header" style="rounded" />
 			<div class="clear"></div>
-		</div></div></div></div>
+		</div></div></div></div></div>
 
 		<div id="main"><div class="container">
 			
@@ -99,14 +99,14 @@ $typekit = "jvf6dch";
 			<div class="clear"></div>
 		</div></div>
 
-		<div id="footer"><div class="container">
+		<div id="footer"><div><div class="container">
 			<jdoc:include type="modules" name="footer" style="rounded" />
 			<div id="copyright">
 				<div>&copy; BrownStones Sports Lounge and Restaurant <?php echo date('Y') ?>. All Rights Reserved.<br/>
 					Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a><br/>
 				</div>
 			</div>
-		</div></div>
+		</div></div></div>
 	</div>
 
 	<div id="debug">

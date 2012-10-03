@@ -6,15 +6,19 @@
 
 #header {
 	text-align: center;
-	background: $beige url('../images/bg_header-home.jpg') top center no-repeat;
+	background: url('../images/bg_header-repeat.jpg') top center repeat-x;
 	
 	> div {
-		background: url('../images/bg_cityscape.png') bottom center repeat-x;
-		
+		background: url('../images/bg_header-home.jpg') top center no-repeat;
+
 		> div {
-			background: url('../images/bg_header-top.png') top center repeat-x;
-			padding: 20px 0;
-			min-height: 384px;
+			background: url('../images/bg_cityscape.png') bottom center repeat-x;
+		
+			> div {
+				background: url('../images/bg_header-top.png') top center repeat-x;
+				padding: 20px 0;
+				min-height: 384px;
+			}
 		}
 	}
 }
@@ -46,8 +50,13 @@
 	font-size: 12px;
 	color: $dark-brown;
 	text-align: center;
-	padding: 17px 0;
-	background-color: $beige;
+	background: url('../images/bg_footer-repeat.jpg') top center repeat-x;
+	
+
+	> div {
+		padding: 17px 0;
+		background: url('../images/bg_footer.jpg') top center no-repeat;
+	}
 
 	a {
 		color: $dark-brown;
@@ -64,14 +73,6 @@
 .blog {
 
 	.items-row {
-		margin-top: 1.5em;
-		&.row-0 {
-			margin-top: 0;
-		}
-	}
-
-	.item {
-		position: relative;
-		padding-right: 30%;
+		margin-bottom: 1.5em;
 	}
 }
