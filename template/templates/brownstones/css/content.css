@@ -41,7 +41,8 @@
 .read-more {
   float: right;
   background: url("../images/button_read-more.png") top left no-repeat;
-  padding-left: 25px; }
+  padding-left: 25px;
+  margin-bottom: 15px; }
   .read-more a {
     color: #3b2313; }
   .read-more > *:first-child {
