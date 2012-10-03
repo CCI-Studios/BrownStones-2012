@@ -49,6 +49,11 @@ body {
 	}
 }
 
+//for readmore button
+.item-page {
+	overflow: auto;
+}
+
 #footer {
 	font-size: 12px;
 	color: $dark-brown;

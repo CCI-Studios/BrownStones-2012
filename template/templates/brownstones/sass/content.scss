@@ -27,9 +27,7 @@
 }
 
 .read-more {
-	position: absolute;
-	right: 22px;
-	bottom: 22px;
+	float: right;
 	background: url('../images/button_read-more.png') top left no-repeat;
 	padding-left: 25px;
 
