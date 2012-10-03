@@ -375,7 +375,7 @@ body, select, input, textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/templates/default/resources/boxsizing.htc); }
+  *behavior: url(/templates/brownstones/resources/boxsizing.htc); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -532,7 +532,7 @@ body {
 
 .module.social-media {
   width: 100%;
-  padding-top: 170px; }
+  padding-top: 10px; }
 
 .module h3 {
   font-size: 1.285714286em;
@@ -867,9 +867,7 @@ body {
   .module.social-media {
     width: auto;
     float: right;
-    padding-top: 10px; }
-    .home .module.social-media {
-      padding-top: 69px; }
+    padding-top: 69px; }
 
   .primary-menu {
     float: right;
