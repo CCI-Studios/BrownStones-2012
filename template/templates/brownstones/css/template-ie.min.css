@@ -497,7 +497,6 @@ body {
   position: relative;
   background-color: #1c0e06;
   margin-bottom: 10px;
-  font-weight: lighter;
   padding: 7px;
   border: 1px solid #392212;
   border-radius: 3px; }
@@ -836,7 +835,8 @@ body {
   .restaurant-menu .menu {
     padding-left: 30px; }
   .restaurant-menu li {
-    display: block; }
+    display: block;
+    padding-top: 0; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {
