@@ -471,6 +471,9 @@ button {
   padding: 0 2.5%;
   margin: 0 auto; }
 
+body {
+  background: url("../images/bg_body-repeat.jpg") top center repeat; }
+
 #header {
   text-align: center;
   background: url("../images/bg_header-repeat.jpg") top center repeat-x; }
@@ -514,7 +517,8 @@ button {
   background: url("../images/bg_footer-repeat.jpg") top center repeat-x; }
   #footer > div {
     padding: 17px 0;
-    background: url("../images/bg_footer.jpg") top center no-repeat; }
+    background: url("../images/bg_footer.jpg") top center no-repeat;
+    min-height: 310px; }
   #footer a {
     color: #1c0e06; }
 
