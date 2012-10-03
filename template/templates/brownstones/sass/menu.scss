@@ -42,17 +42,19 @@
 
 	.menu > li {
 		padding: 0 10px;
-		width: 49%;
-		background-color: $brown;
-		border: 1px solid $dark-brown;
-		box-shadow: inset 0px 0px 10px rgba(black, .7);
-		margin: .25%;
+		width: auto;
+		background-color: inherit;
+		border: none;
+		box-shadow: none;
+		margin: 0;
 	}
 
 	a {
-		color: $beige;
-		line-height: 38px;
+		color: $brown;
+		line-height: 43px;
+
 		&:hover {
+			background: url('../images/rollover_menu.png') 78% top no-repeat;
 			text-decoration: none;
 		}
 	}

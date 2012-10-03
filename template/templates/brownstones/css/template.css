@@ -621,15 +621,16 @@ body {
   font-size: 1.142857143em; }
   .primary-menu .menu > li {
     padding: 0 10px;
-    width: 49%;
-    background-color: #3b2313;
-    border: 1px solid #1c0e06;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.7);
-    margin: .25%; }
+    width: auto;
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+    margin: 0; }
   .primary-menu a {
-    color: #e3dbcb;
-    line-height: 38px; }
+    color: #3b2313;
+    line-height: 43px; }
     .primary-menu a:hover {
+      background: url("../images/rollover_menu.png") 78% top no-repeat;
       text-decoration: none; }
 
 .secondary-menu {
@@ -786,21 +787,6 @@ body {
   .module.sidebar-right {
     width: 50%;
     padding-left: 2.5%; }
-
-  .primary-menu {
-    font-size: 1.142857143em; }
-    .primary-menu .menu > li {
-      padding: 0 10px;
-      width: auto;
-      background-color: inherit;
-      border: none;
-      box-shadow: none;
-      margin: 0; }
-    .primary-menu a {
-      color: #3b2313;
-      line-height: 41px; }
-      .primary-menu a:hover {
-        background: url("../images/rollover_menu.png") 78% top no-repeat; }
 
   .tablet-visible, .mobile-visible,
   .phone-hidden, .desktop-hidden {
