@@ -620,7 +620,7 @@ body {
 .primary-menu {
   font-size: 1.142857143em; }
   .primary-menu .menu > li {
-    padding: 0 10px;
+    padding: 0 5px;
     width: auto;
     background-color: inherit;
     border: none;
@@ -787,6 +787,9 @@ body {
   .module.sidebar-right {
     width: 50%;
     padding-left: 2.5%; }
+
+  .primary-menu .menu > li {
+    padding: 0 10px; }
 
   .tablet-visible, .mobile-visible,
   .phone-hidden, .desktop-hidden {
