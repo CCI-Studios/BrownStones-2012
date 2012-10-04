@@ -811,20 +811,27 @@ body {
     width: 76.595744681%; }
 
   #content {
-    width: 63.829787234%;
+    width: 100%;
     float: left; }
+    .home #content {
+      width: 63.829787234%; }
 
-  #sidebar-right {
+  .home #sidebar-right {
     width: 36.170212766%;
     margin-top: -47px;
     padding-left: 4.255319149%;
-    float: left;
-    margin-left: 0; }
+    margin-left: 0;
+    float: left; }
+  #sidebar-right.with-sidebar {
+    float: right;
+    margin-left: 21.504255319%;
+    width: 78.495744681%;
+    clear: both; }
 
   #copyright {
     padding-top: 17px; }
 
-  .module.sidebar-right {
+  .home .module.sidebar-right {
     width: 100%;
     padding-left: 0; }
 

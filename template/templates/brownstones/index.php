@@ -86,7 +86,13 @@ $typekit = "jvf6dch";
 				<jdoc:include type="component" />
 			</div></div>
 
-			<div id="sidebar-right">
+			<div id="sidebar-right" class="<?php
+							if (!$this->countModules('sidebar-left')) {
+								echo 'no-sidebar';
+							} else {
+								echo 'with-sidebar';
+							}
+					?>">
 				<jdoc:include type="modules" name="sidebar-right" style="rounded" />
 				<div class="clear"></div>
 			</div>
