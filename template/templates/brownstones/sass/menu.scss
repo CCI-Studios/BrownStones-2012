@@ -77,23 +77,6 @@
 
 // @group vmenu
 .vmenu {
-
-	.menu {
-		margin: 0;
-		padding-left: 30px;
-	}
-
-	li {
-		list-style: none;
-	}
-
-	ul ul { // submenus
-		margin: 0.5em 0 1em 1em;
-		list-style: none;
-	}
-}
-
-.restaurant-menu {
 	display: block; //remove
 	position: relative;
 	font-weight: lighter;
@@ -104,10 +87,12 @@
 	}
 
 	.menu {
+		margin: 0;
 		padding-left: 0;
 	}
 
 	li {
+		list-style: none;
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
@@ -122,5 +107,10 @@
 			color: $beige;
 			text-decoration: none;
 		}
+	}
+
+	ul ul { // submenus
+		margin: 0.5em 0 1em 1em;
+		list-style: none;
 	}
 }

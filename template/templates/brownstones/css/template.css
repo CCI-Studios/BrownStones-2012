@@ -645,35 +645,31 @@ body {
     .secondary-menu .menu > li:first-child {
       border-left: 0; }
 
-.vmenu .menu {
-  margin: 0;
-  padding-left: 30px; }
-.vmenu li {
-  list-style: none; }
-.vmenu ul ul {
-  margin: 0.5em 0 1em 1em;
-  list-style: none; }
-
-.restaurant-menu {
+.vmenu {
   display: block;
   position: relative;
   font-weight: lighter;
   margin-top: 1px; }
-  .restaurant-menu h3 {
+  .vmenu h3 {
     font-size: 1.714285714em; }
-  .restaurant-menu .menu {
+  .vmenu .menu {
+    margin: 0;
     padding-left: 0; }
-  .restaurant-menu li {
+  .vmenu li {
+    list-style: none;
     display: inline-block;
     *display: inline;
     *zoom: 1;
     line-height: 24px;
     padding: 10px 20px 0 0; }
-  .restaurant-menu a {
+  .vmenu a {
     color: white; }
-    .restaurant-menu a:hover {
+    .vmenu a:hover {
       color: #e3dbcb;
       text-decoration: none; }
+  .vmenu ul ul {
+    margin: 0.5em 0 1em 1em;
+    list-style: none; }
 
 .clr, .clear {
   clear: both; }
@@ -838,11 +834,11 @@ body {
   .primary-menu .menu > li {
     padding: 0 20px; }
 
-  .restaurant-menu {
+  .vmenu {
     background: url("../images/icon_towers.png") top left no-repeat; }
-    .restaurant-menu .menu {
+    .vmenu .menu {
       padding-left: 30px; }
-    .restaurant-menu li {
+    .vmenu li {
       display: block;
       padding-top: 0; }
 
