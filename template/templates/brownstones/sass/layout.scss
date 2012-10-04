@@ -27,13 +27,26 @@ body {
 	}
 }
 
+#top {
+	margin-top: -40px;
+}
+
 #main {
 	padding: 65px 0 35px;
 	background-color: #231309;
 }
 
 #sidebar-left {
-	padding-bottom: 50px;
+	height: 0;
+	overflow: hidden;
+
+	&.menu-open {
+		height: 100%;
+		background-color: black;
+		padding: 20px;
+		margin-bottom: 4em;
+		@include transition(height .7s ease-in-out);
+	}
 }
 
 #content {

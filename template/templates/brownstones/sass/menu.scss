@@ -77,18 +77,25 @@
 
 // @group vmenu
 .vmenu {
-	display: block; //remove
 	position: relative;
+	width: auto;
 	font-weight: lighter;
-	margin-top: 1px;
+	margin: 1em 0 0;
 
-	h3 {
-		font-size: 1.714285714em;
+	&:first-child {
+		margin-top: 0;
 	}
 
 	.menu {
 		margin: 0;
 		padding-left: 0;
+		width: 100%;
+	}
+
+	h3 {
+		font-size: 1.714285714em;
+		position: relative;
+		top: 0;
 	}
 
 	li {
@@ -96,25 +103,24 @@
 		display: inline-block;
 		*display: inline;
 		*zoom: 1;
-		line-height: 24px;
-		padding: 10px 20px 0 0;
-
-		&.deeper.parent > span {
-			color: $beige;
-		}
+		padding: 0 10px 0 0;
+		width: 50%;
 	}
 
-	a {
+	a {	
+		display: block;
 		color: white;
+		padding: 10px 0 7px 10px;
 
 		&:hover {
 			color: $beige;
 			text-decoration: none;
+			background-color: #202020;
 		}
 	}
 
 	ul ul { // submenus
-		margin: 0.5em 0 1em 1em;
+		margin: 0;
 		list-style: none;
 		padding-left: 0;
 	}

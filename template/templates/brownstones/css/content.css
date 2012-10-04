@@ -1,5 +1,6 @@
 .image-border {
-  border: 3px solid #e3dbcb; }
+  border: 3px solid #e3dbcb;
+  border-radius: 2px; }
 
 .image-shadow {
   display: block;
@@ -17,6 +18,7 @@
 
 .image-border-shadow {
   border: 3px solid #e3dbcb;
+  border-radius: 2px;
   display: block;
   position: relative; }
   .image-border-shadow::before {

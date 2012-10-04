@@ -11,6 +11,43 @@
 	padding-top: 0;
 }
 
+.module.show-menu {
+	position: relative;
+	padding-bottom: 60px;
+
+	h3 {
+		padding: 8px 0 0 47px;
+	}
+
+	.button-show-menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 21px;
+		height: 17px;
+		padding: 10px;
+		text-indent: -9999px;
+		background: url('../images/icon_show-menu.png') 10px 10px no-repeat;
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		-ms-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+
+	&.menu-open .button-show-menu,
+	.button-show-menu:hover {
+		background-color: black;
+	}
+
+	&.menu-open {
+		padding-bottom: 7px;
+		
+		.button-show-menu {
+			background-position: -31px 10px;
+		}
+	}
+}
+
 .module.sidebar-right {
 	width: 100%;
 	float: left;

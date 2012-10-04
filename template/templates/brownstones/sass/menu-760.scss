@@ -5,14 +5,24 @@
 }
 
 .vmenu {
+	display: block;
 	background: url('../images/icon_towers.png') top left no-repeat;
+	border-top: none;
+	margin: 0 0 4em;
+	padding-top: 0;
 
 	.menu {
 		padding-left: 30px;
 	}
 
+	h3 {
+		position: absolute;
+		top: -40px;
+	}
+
 	li {
 		display: block;
 		padding-top: 0;
+		width: auto;
 	}
 }

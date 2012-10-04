@@ -385,8 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .item-page h1,
 .blog > h1,
-.vmenu h3,
-.vmenu li.deeper.parent > span {
+.vmenu h3 {
   font-size: 1.714285714em;
   position: absolute;
   left: 0;
@@ -487,12 +486,26 @@ body {
         padding: 20px 0;
         height: 384px; }
 
+#top {
+  margin-top: -40px; }
+
 #main {
   padding: 65px 0 35px;
   background-color: #231309; }
 
 #sidebar-left {
-  padding-bottom: 50px; }
+  height: 0;
+  overflow: hidden; }
+  #sidebar-left.menu-open {
+    height: 100%;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 4em;
+    -webkit-transition: height 0.7s ease-in-out;
+    -moz-transition: height 0.7s ease-in-out;
+    -o-transition: height 0.7s ease-in-out;
+    -ms-transition: height 0.7s ease-in-out;
+    transition: height 0.7s ease-in-out; }
 
 #content {
   position: relative;
@@ -538,6 +551,32 @@ body {
   font-size: 1.285714286em;
   padding-top: 0; }
 
+.module.show-menu {
+  position: relative;
+  padding-bottom: 60px; }
+  .module.show-menu h3 {
+    padding: 8px 0 0 47px; }
+  .module.show-menu .button-show-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 17px;
+    padding: 10px;
+    text-indent: -9999px;
+    background: url("../images/icon_show-menu.png") 10px 10px no-repeat;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box; }
+  .module.show-menu.menu-open .button-show-menu,
+  .module.show-menu .button-show-menu:hover {
+    background-color: black; }
+  .module.show-menu.menu-open {
+    padding-bottom: 7px; }
+    .module.show-menu.menu-open .button-show-menu {
+      background-position: -31px 10px; }
+
 .module.sidebar-right {
   width: 100%;
   float: left;
@@ -580,7 +619,8 @@ body {
     margin-left: 0; }
 .module.gallery ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
   padding: 0;
-  border: 3px solid #e3dbcb; }
+  border: 3px solid #e3dbcb;
+  border-radius: 2px; }
 .module.gallery ul.sigProClassic li.sigProThumb span.sigProLinkWrapper {
   margin: 0;
   padding: 0;
@@ -647,31 +687,37 @@ body {
       border-left: 0; }
 
 .vmenu {
-  display: block;
   position: relative;
+  width: auto;
   font-weight: lighter;
-  margin-top: 1px; }
-  .vmenu h3 {
-    font-size: 1.714285714em; }
+  margin: 1em 0 0; }
+  .vmenu:first-child {
+    margin-top: 0; }
   .vmenu .menu {
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    width: 100%; }
+  .vmenu h3 {
+    font-size: 1.714285714em;
+    position: relative;
+    top: 0; }
   .vmenu li {
     list-style: none;
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    line-height: 24px;
-    padding: 10px 20px 0 0; }
-    .vmenu li.deeper.parent > span {
-      color: #e3dbcb; }
+    padding: 0 10px 0 0;
+    width: 50%; }
   .vmenu a {
-    color: white; }
+    display: block;
+    color: white;
+    padding: 10px 0 7px 10px; }
     .vmenu a:hover {
       color: #e3dbcb;
-      text-decoration: none; }
+      text-decoration: none;
+      background-color: #202020; }
   .vmenu ul ul {
-    margin: 0.5em 0 1em 1em;
+    margin: 0;
     list-style: none;
     padding-left: 0; }
 
@@ -702,7 +748,8 @@ body {
   text-shadow: none; }
 
 .image-border {
-  border: 3px solid #e3dbcb; }
+  border: 3px solid #e3dbcb;
+  border-radius: 2px; }
 
 .image-shadow {
   display: block;
@@ -719,7 +766,8 @@ body {
     display: block; }
 
 .image-border {
-  border: 3px solid #e3dbcb; }
+  border: 3px solid #e3dbcb;
+  border-radius: 2px; }
 
 .image-shadow {
   display: block;
@@ -737,6 +785,7 @@ body {
 
 .image-border-shadow {
   border: 3px solid #e3dbcb;
+  border-radius: 2px;
   display: block;
   position: relative; }
   .image-border-shadow::before {
@@ -804,7 +853,14 @@ body {
 
 #sidebar-left {
   float: left;
-  width: 23.404255319%; }
+  width: 23.404255319%;
+  margin: 0;
+  padding-bottom: 0;
+  height: auto;
+  overflow: visible;
+  background-color: none; }
+  #sidebar-left.menu-open {
+    background-color: inherit; }
 
 #sidebar-left + #content {
   width: 76.595744681%; }
@@ -823,9 +879,7 @@ body {
   float: left; }
 #sidebar-right.with-sidebar {
   float: right;
-  margin-left: 21.504255319%;
-  width: 78.495744681%;
-  clear: both; }
+  width: 78.495744681%; }
 
 #copyright {
   padding-top: 17px; }
@@ -838,12 +892,20 @@ body {
   padding: 0 20px; }
 
 .vmenu {
-  background: url("../images/icon_towers.png") top left no-repeat; }
+  display: block;
+  background: url("../images/icon_towers.png") top left no-repeat;
+  border-top: none;
+  margin: 0 0 4em;
+  padding-top: 0; }
   .vmenu .menu {
     padding-left: 30px; }
+  .vmenu h3 {
+    position: absolute;
+    top: -40px; }
   .vmenu li {
     display: block;
-    padding-top: 0; }
+    padding-top: 0;
+    width: auto; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {

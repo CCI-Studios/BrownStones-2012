@@ -73,12 +73,16 @@ $typekit = "jvf6dch";
 		</div></div></div></div></div>
 
 		<div id="main"><div class="container">
+
+			<div id="top">
+				<jdoc:include type="modules" name="top" style="rounded" />
+			</div>
 			
 			<?php if ($this->countModules('sidebar-left')): ?>
-			<div id="sidebar-left">
+			<div id="sidebar-left"><div>
 				<jdoc:include type="modules" name="sidebar-left" style="rounded" />
 				<div class="clear"></div>
-			</div>
+			</div></div>
 			<?php endif; ?>
 
 			<div id="content"><div>
@@ -129,6 +133,7 @@ $typekit = "jvf6dch";
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/menu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/scripts.js"></script>
 	<?php else: ?>

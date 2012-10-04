@@ -5,6 +5,15 @@
 #sidebar-left {
 	float: left;
 	width: 23.404255319%;
+	margin: 0;
+	padding-bottom: 0;
+	height: auto;
+	overflow: visible;
+	background-color: none;
+
+	&.menu-open {
+		background-color: inherit;
+	}
 }
 
 #sidebar-left + #content {
@@ -32,9 +41,7 @@
 
 	&.with-sidebar {
 		float: right;
-		margin-left: 21.504255319%;
 		width: 78.495744681%;
-		clear: both;
 	}
 }
 

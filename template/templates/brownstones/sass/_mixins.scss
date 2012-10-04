@@ -21,6 +21,7 @@
 
 @mixin image-border {
 	border: 3px solid $beige;
+	border-radius: 2px;
 }
 
 @mixin image-shadow {
@@ -40,4 +41,12 @@
 	img {
 		display: block;
 	}
+}
+
+@mixin transition($settings) {
+	-webkit-transition: $settings;
+	-moz-transition: $settings;
+	-o-transition: $settings;
+	-ms-transition: $settings;
+	transition: $settings;
 }
