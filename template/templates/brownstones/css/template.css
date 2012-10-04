@@ -385,7 +385,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .item-page h1,
 .blog > h1,
-.vmenu h3 {
+.vmenu h3,
+.vmenu li.deeper.parent > span {
   font-size: 1.714285714em;
   position: absolute;
   left: 0;
@@ -662,6 +663,8 @@ body {
     *zoom: 1;
     line-height: 24px;
     padding: 10px 20px 0 0; }
+    .vmenu li.deeper.parent > span {
+      color: #e3dbcb; }
   .vmenu a {
     color: white; }
     .vmenu a:hover {
@@ -669,7 +672,8 @@ body {
       text-decoration: none; }
   .vmenu ul ul {
     margin: 0.5em 0 1em 1em;
-    list-style: none; }
+    list-style: none;
+    padding-left: 0; }
 
 .clr, .clear {
   clear: both; }

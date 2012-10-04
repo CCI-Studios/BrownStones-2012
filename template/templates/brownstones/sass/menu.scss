@@ -98,6 +98,10 @@
 		*zoom: 1;
 		line-height: 24px;
 		padding: 10px 20px 0 0;
+
+		&.deeper.parent > span {
+			color: $beige;
+		}
 	}
 
 	a {
@@ -112,5 +116,6 @@
 	ul ul { // submenus
 		margin: 0.5em 0 1em 1em;
 		list-style: none;
+		padding-left: 0;
 	}
 }
