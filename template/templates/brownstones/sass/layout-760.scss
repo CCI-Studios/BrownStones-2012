@@ -2,6 +2,10 @@
 	background-position: top center;
 }
 
+#top {
+	margin-top: 0;
+}
+
 #sidebar-left {
 	float: left;
 	width: 23.404255319%;
@@ -13,6 +17,8 @@
 
 	&.menu-open {
 		background-color: inherit;
+		margin-bottom: 0;
+		padding: 0;
 	}
 }
 

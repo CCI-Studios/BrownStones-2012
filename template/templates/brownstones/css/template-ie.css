@@ -851,6 +851,9 @@ body {
 #header {
   background-position: top center; }
 
+#top {
+  margin-top: 0; }
+
 #sidebar-left {
   float: left;
   width: 23.404255319%;
@@ -860,7 +863,9 @@ body {
   overflow: visible;
   background-color: none; }
   #sidebar-left.menu-open {
-    background-color: inherit; }
+    background-color: inherit;
+    margin-bottom: 0;
+    padding: 0; }
 
 #sidebar-left + #content {
   width: 76.595744681%; }
@@ -906,6 +911,10 @@ body {
     display: block;
     padding-top: 0;
     width: auto; }
+  .vmenu a {
+    padding-top: 3px; }
+    .vmenu a:hover {
+      background-color: inherit; }
 
 .tablet-visible, .mobile-visible,
 .desktop-visible, .phone-hidden {

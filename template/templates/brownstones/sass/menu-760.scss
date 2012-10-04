@@ -25,4 +25,11 @@
 		padding-top: 0;
 		width: auto;
 	}
+
+	a {
+		padding-top: 3px;
+		&:hover {
+			background-color: inherit;
+		}
+	}
 }
