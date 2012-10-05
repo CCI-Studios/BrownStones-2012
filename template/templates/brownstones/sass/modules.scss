@@ -1,6 +1,16 @@
 // @group modules
 .module {} // DO NOT TOUCH
 
+.module.logo {
+	max-width: 312px;
+	margin: 0 auto;
+
+	img {
+		width: 75%;
+		height: auto;
+	}
+}
+
 .module.social-media {
 	width: 100%;
 	padding-top: 10px;
