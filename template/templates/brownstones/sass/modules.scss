@@ -4,8 +4,9 @@
 .module.logo {
 	max-width: 312px;
 	margin: 0 auto;
+	width: 100%;
 
-	img {
+	.ie8 & img {
 		width: 75%;
 		height: auto;
 	}
@@ -14,6 +15,10 @@
 .module.social-media {
 	width: 100%;
 	padding-top: 10px;
+
+	img {
+		max-width: inherit;
+	}
 }
 
 .module h3 {
@@ -76,6 +81,7 @@
 	div.custom {
 		background-color: $dark-brown;
 		@include border;
+		*zoom: 1;
 
 		&:hover {
 			background: $dark-brown url('../images/rollover_sidebar.png') bottom right no-repeat;
