@@ -1,5 +1,19 @@
 #header {
 	background-position: top center;
+
+	> div {
+
+		> div {
+		
+			> div {
+				height: 384px;
+			}
+		}
+	}
+}
+
+#main {
+	padding-top: 65px;
 }
 
 #top {
