@@ -484,13 +484,13 @@ body {
       #header > div > div > div {
         background: url("../images/bg_header-top.png") top center repeat-x;
         padding: 20px 0;
-        height: 384px; }
+        height: 295px; }
 
 #top {
   margin-top: -40px; }
 
 #main {
-  padding: 65px 0 35px;
+  padding: 45px 0 35px;
   background-color: #231309; }
 
 #sidebar-left {
@@ -542,6 +542,13 @@ body {
 
 .blog .items-row {
   margin-bottom: 1.5em; }
+
+.module.logo {
+  max-width: 312px;
+  margin: 0 auto; }
+  .module.logo img {
+    width: 75%;
+    height: auto; }
 
 .module.social-media {
   width: 100%;
@@ -691,8 +698,7 @@ body {
 .vmenu {
   position: relative;
   font-weight: lighter;
-  margin: 1em 0 0;
-  overflow: auto; }
+  margin: 1em 0 0; }
   .vmenu:first-child {
     margin-top: 0; }
   .vmenu .menu {
@@ -853,6 +859,11 @@ body {
 @media only screen and (min-width: 760px) {
   #header {
     background-position: top center; }
+    #header > div > div > div {
+      height: 384px; }
+
+  #main {
+    padding-top: 65px; }
 
   #top {
     margin-top: 0; }
@@ -892,6 +903,9 @@ body {
   #copyright {
     padding-top: 17px; }
 
+  .module.logo img {
+    width: 100%; }
+
   .home .module.sidebar-right {
     width: 100%;
     padding-left: 0; }
@@ -902,7 +916,6 @@ body {
   .vmenu {
     display: block;
     background: url("../images/icon_towers.png") top left no-repeat;
-    border-top: none;
     margin: 0 0 4em;
     padding-top: 0; }
     .vmenu .menu {
