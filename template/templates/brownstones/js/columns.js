@@ -20,9 +20,9 @@ CCI.Columns = new Class({
 		
 		this._calculate();
 		
-		window.addEvent('resize', function() {
-			this._calculate();
-		}.bind(this));
+			window.addEvent('resize', function() {
+				this._calculate();
+			}.bind(this));
 	},
 	
 	_calculate: function() {

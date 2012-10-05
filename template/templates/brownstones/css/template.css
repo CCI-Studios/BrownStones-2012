@@ -417,7 +417,11 @@ h6 {
   font-size: 1.0em; }
 
 p {
-  margin-top: 0; }
+  margin: 0 0 1em; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 a, a:active, a:visited {
   color: #ae9f8b;
@@ -484,7 +488,7 @@ body {
       #header > div > div > div {
         background: url("../images/bg_header-top.png") top center repeat-x;
         padding: 20px 0;
-        height: 295px; }
+        height: 315px; }
 
 #top {
   margin-top: -40px; }
@@ -545,14 +549,17 @@ body {
 
 .module.logo {
   max-width: 312px;
-  margin: 0 auto; }
-  .module.logo img {
+  margin: 0 auto;
+  width: 100%; }
+  .ie8 .module.logo img {
     width: 75%;
     height: auto; }
 
 .module.social-media {
   width: 100%;
   padding-top: 10px; }
+  .module.social-media img {
+    max-width: inherit; }
 
 .module h3 {
   font-size: 1.285714286em;
@@ -599,7 +606,8 @@ body {
     background-color: #1c0e06;
     padding: 7px;
     border: 1px solid #392212;
-    border-radius: 3px; }
+    border-radius: 3px;
+    *zoom: 1; }
     .module.sidebar-right div.custom > div {
       padding: 15px 15px 0;
       border: 1px solid #392212;
@@ -715,7 +723,8 @@ body {
     *display: inline;
     *zoom: 1;
     padding: 0 10px 0 0;
-    width: 50%; }
+    width: 50%;
+    vertical-align: top; }
   .vmenu a {
     display: block;
     color: white;
@@ -930,7 +939,7 @@ body {
     .vmenu a {
       padding-top: 3px; }
       .vmenu a:hover {
-        background-color: inherit; }
+        background-color: transparent; }
 
   .tablet-visible, .mobile-visible,
   .desktop-visible, .phone-hidden {
