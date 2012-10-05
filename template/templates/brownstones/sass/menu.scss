@@ -78,9 +78,9 @@
 // @group vmenu
 .vmenu {
 	position: relative;
-	width: auto;
 	font-weight: lighter;
 	margin: 1em 0 0;
+	overflow: auto;
 
 	&:first-child {
 		margin-top: 0;
@@ -110,7 +110,7 @@
 	a {	
 		display: block;
 		color: white;
-		padding: 10px 0 7px 10px;
+		padding: 10px 0 7px 13px;
 
 		&:hover {
 			color: $beige;
