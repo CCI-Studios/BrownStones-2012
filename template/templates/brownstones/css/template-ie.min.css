@@ -554,6 +554,8 @@ body {
 .module.show-menu {
   position: relative;
   padding-bottom: 60px; }
+  .module.show-menu > div {
+    min-height: 30px; }
   .module.show-menu h3 {
     padding: 8px 0 0 47px; }
   .module.show-menu .button-show-menu {
@@ -688,9 +690,9 @@ body {
 
 .vmenu {
   position: relative;
-  width: auto;
   font-weight: lighter;
-  margin: 1em 0 0; }
+  margin: 1em 0 0;
+  overflow: auto; }
   .vmenu:first-child {
     margin-top: 0; }
   .vmenu .menu {
@@ -711,7 +713,7 @@ body {
   .vmenu a {
     display: block;
     color: white;
-    padding: 10px 0 7px 10px; }
+    padding: 10px 0 7px 13px; }
     .vmenu a:hover {
       color: #e3dbcb;
       text-decoration: none;
