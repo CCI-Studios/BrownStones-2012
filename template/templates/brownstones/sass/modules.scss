@@ -54,11 +54,13 @@
 	}
 
 	&.menu-open .button-show-menu,
-	.button-show-menu:hover {
+	.button-show-menu:hover,
+	.menu & .button-show-menu {
 		background-color: black;
 	}
 
-	&.menu-open {
+	&.menu-open,
+	.menu & {
 		padding-bottom: 7px;
 		
 		.button-show-menu {
