@@ -29,7 +29,8 @@
 	overflow: visible;
 	background-color: none;
 
-	&.menu-open {
+	&.menu-open,
+	.menu & {
 		background-color: inherit;
 		margin-bottom: 0;
 		padding: 0;
