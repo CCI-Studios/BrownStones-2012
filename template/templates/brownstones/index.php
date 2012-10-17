@@ -147,7 +147,7 @@ $typekit = "jvf6dch";
 					s.parentNode.insertBefore(g,s)}(document,"script"));
 		  	</script>
 		<?php endif; ?>
-		<script src="/templates/<?= $this->template ?>/js/scripts-ck.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/scripts.min.js"></script>
 	<?php endif; ?>
 </body>
 </html>
