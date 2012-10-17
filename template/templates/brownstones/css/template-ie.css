@@ -500,7 +500,7 @@ body {
 #sidebar-left {
   height: 0;
   overflow: hidden; }
-  #sidebar-left.menu-open {
+  #sidebar-left.menu-open, .menu #sidebar-left {
     height: 100%;
     background-color: black;
     padding: 20px;
@@ -586,11 +586,11 @@ body {
     -ms-box-sizing: content-box;
     box-sizing: content-box; }
   .module.show-menu.menu-open .button-show-menu,
-  .module.show-menu .button-show-menu:hover {
+  .module.show-menu .button-show-menu:hover, .menu .module.show-menu .button-show-menu {
     background-color: black; }
-  .module.show-menu.menu-open {
+  .module.show-menu.menu-open, .menu .module.show-menu {
     padding-bottom: 7px; }
-    .module.show-menu.menu-open .button-show-menu {
+    .module.show-menu.menu-open .button-show-menu, .menu .module.show-menu .button-show-menu {
       background-position: -31px 10px; }
 
 .module.sidebar-right {
@@ -884,7 +884,7 @@ body {
   height: auto;
   overflow: visible;
   background-color: none; }
-  #sidebar-left.menu-open {
+  #sidebar-left.menu-open, .menu #sidebar-left {
     background-color: inherit;
     margin-bottom: 0;
     padding: 0; }
